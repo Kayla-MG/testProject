@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact form</title>
+        <meta charset="utf-8"/>
+        <meta name="descrition" content="contact us, send a query">
+        <meta name="keywords" content="contact, query, email">
+        <style>
+            body{
+                font-family: sans-serif;
+                background-image: url(../week8/images/Saint_Peters.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 10px;
+            }
+
+            main{
+                margin: 15px 200px;
+                padding: 20px;
+                border: black solid 1px;
+                background: white;
+                min-height: 500px;
+            }
+            header p{
+                font-style: italic;
+                text-align: center;
+                font-weight: 900;
+            }
+            .required{
+                font-weight: bold;
+                color: red;
+            }
+          
+        </style>
+
+
+    </head>
+    <body>
+        <header>
+            <p> Any queries or feedback please complete & submit</p>
+        </header>
+        <main>
+            <section>
+                <h3>Please enter the following information: (form action="http:/foo.com" method="get")</h3>
+            <form action="http:/foo.com" method="put">
+                <label for="first_name">First name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required> <br>
+                <label for="last_name">Last name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" autofocus required> <br>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="text" name="email" id="email" required placeholder="johndoe@example.com"> 
+                <br>
+
+                <label for="gender">Gender :</label>
+                <input type="radio" id="gender" name="gender" value="male">Male
+                <input type="radio" id="gender" name="gender" value="female">Female
+                <input type="radio" id="gender" name="gender" value="other" checked>Other<br>
+            </form>
+
+            </section>
+        </main>
+        <footer>Copyright KMG</footer>
+    </body>
+</html>
